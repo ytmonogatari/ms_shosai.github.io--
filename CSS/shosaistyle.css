@@ -1,0 +1,333 @@
+/* common */
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /*rem算出をしやすくするために*/
+}
+
+body {
+  margin: 0;
+  font-family: arial;
+  background: #000
+}
+
+h1 h2 {
+  color: rgb(168, 127, 6);
+  font-family: 'Stardos Stencil', cursive;
+  font-weight: bold;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+.container {
+  color: rgb(168, 127, 6);
+  font-family: 'Stardos Stencil';
+  font-weight: bold;
+  font-size: 24px;
+  width: 100%;
+}
+
+
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+a {
+  text-decoration: none;
+  color: rgb(168, 127, 6);
+  font-family: 'Stardos Stencil', cursive;
+  font-weight: bold;
+  transition: opacity.3S;
+}
+
+a:hover {
+  opacity: .5;
+}
+
+
+
+/* header */
+.up {
+  padding-top: 25px;
+  border-bottom: 6px solid red;
+}
+
+header {
+  padding: 8px 0;
+  width: 100%;
+}
+
+header h1 {
+  color: rgb(168, 127, 6);
+  font-family: 'Stardos Stencil', cursive;
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+}
+
+header li a {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  text-align: center;
+  color: rgb(168, 127, 6);
+  font-family: 'Stardos Stencil', cursive;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+header li a i {
+  font-size: 18px;
+}
+
+header li+li {
+  margin-left: 8px;
+}
+
+header form {
+  display: none;
+}
+
+header input,
+header button {
+  all: unset;
+}
+
+header input {
+  border-bottom: 1px solid #aaa;
+  padding: 4px;
+  width: 300px;
+}
+
+header button {
+  cursor: pointer;
+}
+
+
+
+.f-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 10px;
+
+}
+
+
+
+
+.border {
+  border-bottom: solid 1px #fff;
+  width: 100%;
+  padding-top: 12px;
+  margin-bottom: 16px;
+}
+
+/* TICKET */
+
+.ticket {
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 1em;
+}
+
+
+.caution_1 {
+  background-color: #fff;
+  color: #000;
+  padding-left: 10px;
+  font-size: 0.8em;
+  margin: 10px;
+}
+
+
+/* 予約 */
+.f-container {
+  flex-direction: column;
+  font-size: 0.8em;
+}
+
+.m_sentaku {
+  outline: solid 1px #fff;
+  padding: 5px;
+  border-radius: 4px;
+
+}
+
+.n_maisu {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+
+
+.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: .3rem 1.5rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn {
+  color: #fff;
+  background-color: orange;
+  border-bottom: 5px solid #ccc100;
+}
+
+a.btn:hover {
+  margin-top: 3px;
+  color: #fff;
+  background: #fff20a;
+  border-bottom: 2px solid #ccc100;
+}
+
+
+
+/*  */
+
+.products a.more {
+  display: block;
+  width: 70%;
+  line-height: 48px;
+  border: 2px solid #fff;
+  text-align: center;
+  margin: 32px auto;
+
+}
+
+footer {
+  background: #4c4948;
+  padding: 16px 0;
+  color: white;
+}
+
+footer.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer.small {
+  font-size: 16px;
+}
+
+footer li i {
+  font-style: 24px;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer li+li {
+  margin-left: 8px;
+}
+
+/* medium screen */
+
+@media(min-width:600px) {
+
+  .products li {
+    width: calc((100% - 32px)/2);
+
+  }
+
+  .f-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+  }
+
+  .n_maisuu {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.n_maisu {
+  display: flex;
+}
+
+/* large screen */
+
+@media(min-width:800px) {
+
+  .container {
+    width: calc(100% - 32px);
+    margin: 0 auto;
+    max-width: 800px;
+
+  }
+
+
+  .f-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 16px;
+  }
+
+  .f-item {
+    margin-left: 2px;
+  }
+
+  .m_sentaku {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .n_maisu {
+    display: flex;
+    justify-content: space-between;
+  }
+}
